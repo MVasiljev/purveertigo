@@ -1,0 +1,85 @@
+.container {
+  background: #3a3d3e;
+  // background: linear-gradient(#3a3d3ee8,#de9c72f1), url("../../Images/HomePage/cartoon_steam.png");
+  background-size: cover;
+  //position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  @media (max-width: 640px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.contact_info {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: -2rem;
+}
+
+.social_icons {
+  color: white;
+  align-self: flex-end;
+  display:flex;
+  flex-direction:column;
+  padding-right:0.5rem;
+  
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.social_icons h2{
+  padding-bottom:1em;
+}
+
+.icons {
+  font-size: 3em;
+  display:flex;
+  justify-content:space-evenly;
+  padding-bottom:0.5rem;
+  
+
+
+}
+
+
+
+.footer_heading {
+  margin-left: 2rem;
+  //margin-bottom: 2rem;
+  font-size: 1.8rem;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  align-self: flex-start;
+  //padding-bottom: 2rem;
+  padding-right: 3rem;
+}
+
+.logo img {
+  height: 10rem;
+  //margin-left: -1rem;
+}
+.footer_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+}

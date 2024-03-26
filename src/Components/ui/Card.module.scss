@@ -1,0 +1,33 @@
+// .card {
+//     background: rgba(255, 255, 255, 0.539) ,url("../../Images/HomePage/certificate.jpg");
+    
+//     border-radius: 6px;
+//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+//   }
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    border:3px;
+    border-color:black;
+    margin-bottom: 1.6%;
+    background-color:#3a3d3e;
+    background-size:cover;
+    background-repeat:no-repeat;
+    line-height: 1.4;
+    // font-family: sans-serif;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: 100;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .card li {
+      list-style-type: none;
+  }
+
+

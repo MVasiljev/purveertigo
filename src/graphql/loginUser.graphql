@@ -1,0 +1,13 @@
+mutation Login($loginEmail: String!, $loginPassword: String!) {
+    logInUser(data: {email: $loginEmail, password: $loginPassword}) {
+        userPayload {
+            _id
+            email
+        }
+        token
+        errors {
+            path
+            message
+        }
+    }
+}

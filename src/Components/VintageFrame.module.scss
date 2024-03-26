@@ -1,0 +1,300 @@
+:root {
+  --skintone-color: #de9b72;
+  --dark-color: #3a3d3e;
+}
+
+
+
+.container {
+  padding: 5em;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-size: 140% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.body2 {
+  background-image: url("../Images/five-bells.png"),
+    linear-gradient(to right, rgba(58, 61, 62, 1) 0%, rgba(58, 61, 62, 1) 100%);
+}
+
+@media (min-width: 992px) {
+  .body {
+    background-size: 148vh !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% -31vh !important;
+  }
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.countach {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.skintone_text {
+  color: var(--skintone-color);
+}
+
+.dark_text {
+  color: var(--dark-color);
+}
+
+.white_text {
+  color: #fff;
+}
+
+.body a:hover {
+  color: #c2c2c2;
+}
+
+.dark_background {
+  background: var(--dark-color);
+}
+
+.text_uppercase {
+  text-transform: uppercase !important;
+}
+
+.text_center {
+  text-align: center !important;
+}
+
+.logo {
+  max-width: 40%;
+  filter: invert(1);
+}
+
+// @media (min-width: 768px) {
+//   .logo {
+//     width: 16em;
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   .logo {
+//     width: 18em;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   .logo {
+//     width: 28vh;
+//     height: 28vh;
+//   }
+// }
+
+.body h1 {
+  letter-spacing: 4px;
+  padding-top: 0.5em;
+}
+
+@media (min-width: 992px) {
+  .body h1 {
+    font-size: 2.75em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body h1 {
+    font-size: 7em;
+    letter-spacing: 5px;
+  }
+}
+
+.lead {
+  font-size: 1.5rem;
+  padding-top: 0.5em;
+}
+
+@media (min-width: 992px) {
+  .lead {
+    font-size: 2rem;
+    padding-top: 0.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lead {
+    font-size: 2.5rem;
+    padding-top: 1em;
+  }
+}
+
+.body p.general {
+  font-size: 2.5vh;
+  margin-bottom: 0.5em;
+  line-height: 1.25em;
+  text-align: justify;
+}
+
+.p_text {
+  max-width: 40%;
+  @media (max-width: 640px) {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .body p.general {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body p.general {
+    font-size: 1.5em;
+  }
+}
+
+.inner_border {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.outer_border {
+  border: 2px solid #de9b72;
+  height: 99%;
+  width: 98%;
+  padding: 6px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .outer_border {
+    height: 94%;
+  }
+}
+
+.mid_border {
+  border: 6px solid #de9b72;
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  margin: auto;
+}
+
+.inner_border {
+  position: relative;
+  border: 2px solid #de9b72;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+/* Decorations */
+.corner_decoration {
+  position: absolute;
+  width: 3em;
+  margin: -3px;
+}
+
+@media (min-width: 768px) {
+  .corner_decoration {
+    width: 3.5em;
+    margin: -4px;
+  }
+}
+
+@media (min-width: 992px) {
+  .corner_decoration {
+    width: 4em;
+    margin: -5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .corner_decoration {
+    width: 5em;
+    margin: -6px;
+  }
+}
+
+.corner_decoration.corner_left_top {
+  left: 0;
+  top: 0;
+}
+
+.corner_decoration.corner_right_top {
+  top: 0;
+  right: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.corner_decoration.corner_right_bottom {
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(-1);
+  transform: scale(-1);
+}
+
+.corner_decoration.corner_left_bottom {
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.vertical_decoration {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 11em;
+}
+
+@media (min-width: 768px) {
+  .vertical_decoration {
+    width: 16em;
+  }
+}
+
+@media (min-width: 992px) {
+  .vertical_decoration {
+    width: 20em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vertical_decoration {
+    width: 27em;
+  }
+}
+
+.vertical_decoration.top {
+  top: 0;
+}
+
+.vertical_decoration.bottom {
+  bottom: 0;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}

@@ -1,0 +1,31 @@
+
+
+  .item {
+    margin: 1rem 0;
+    color:white;
+  }
+  
+  .image {
+    height: 20rem;
+    overflow: hidden;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+  
+  .image img {
+    width: 50%;
+    object-fit:contain;
+    
+  }
+  
+  .content {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .item h3 {
+    font-size: 1.25rem;
+    color: white;
+  }
+
+  

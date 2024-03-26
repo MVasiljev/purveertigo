@@ -1,0 +1,67 @@
+.card {
+  box-shadow: 0 3px 8px 0 rgba(1, 0, 0, 0.3);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+  &:hover{
+    transform:scale(1.05);
+    
+
+  
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2rem;
+  padding: 2rem;
+  margin-top: 4rem;
+
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    object-fit: contain;
+  }
+}
+
+.card img {
+  max-width:100%;
+  
+  object-fit:cover;
+  object-position:50% 30%;
+  height:20em;
+  
+  
+  
+  @media (max-width: 640px) {
+    object-fit: contain;
+  }
+}
+.card img.alt{
+  object-fit:cover;
+  object-position:0% 0%;
+}
+
+.card h1 {
+  font-weight: bold;
+  text-align: center;
+  
+  color: #de9b72;
+  font-family:"Lato",sans-serif;
+  text-transform: capitalize;
+}
+
+.card h2 {
+  font-size:1em;
+  text-align:center;
+  text-transform:uppercase;
+  padding:0.5em;
+
+}
+
+.card p{
+  text-align:center;
+}

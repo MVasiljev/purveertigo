@@ -1,0 +1,12 @@
+query Me{
+    me{
+        userPayload {
+            _id
+            email
+        }
+        errors{
+            path
+            message
+        }
+    }
+}
